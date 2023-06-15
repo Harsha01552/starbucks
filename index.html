@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+   
+    <title>Starbucks Website Landing Page</title>
+
+     
+    <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+
+       <section>
+
+                <div class="circle"></div>
+                <header>
+
+                        
+                        <ul>
+                            <li><a href="">Home</a></li>
+                            <li><a href="">About Us</a></li>
+                            <li><a href="">Services</a></li>
+                            <li><a href="">Contact</a></li>
+                        </ul>
+                    
+                </header>
+
+                <div class="content">
+
+                    <div class="textBox">
+                        <h2>It's Just not coffee <br>It's <span id="starbucks">Starbucks</span></h2>
+                        <p>The company itself is a very successful company. The consequences of those who praise are expedient, as if he does not flee when he attains great things, when he sees in himself all that truth he is repulsed, but they are as they often are.</p>
+                        <a href="" id="buttonLearn">Learn More</a>
+                    </div>
+
+                    <div class="imgBox">
+                        
+                    </div>
+
+                </div>
+
+
+
+       </section>
+
+       <script>
+
+            function imgSlider(anything){
+                document.querySelector('.starbucks').src = anything;
+            }
+
+            function changeCircleColor(color){
+                const circle = document.querySelector('.circle');
+                circle.style.background = color;
+            }
+
+            function starbucksHead(colorHead){
+                const header = document.querySelector('#starbucks');
+                header.style.color = colorHead;
+
+                const LearnMore = document.querySelector('#buttonLearn');
+                LearnMore.style.background = colorHead;
+            }
+
+        
+
+       </script>
+    
+</body>
+</html>
